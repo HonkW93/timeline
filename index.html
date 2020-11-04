@@ -284,25 +284,26 @@
           <br>
           1.Github项目地址统一变更为HonkW93<br>
           <br>
-          2.由于顶级域名邮箱MX解析与CNAME解析存在冲突，删除顶级域名的CNAME解析<br>
-          <br>
-          3.新增首页导航home.honk.wang，同时绑定原域名honk.wang；合并原博客站，仓库站以及日记站，通过二级域名导航<br>
+          2.新增首页导航home.honk.wang，同时绑定原域名honk.wang；合并原博客站，仓库站以及日记站，通过二级域名导航<br>
           &nbsp;&nbsp;&nbsp;&nbsp;博客站：blog.honk.wang<br>
           &nbsp;&nbsp;&nbsp;&nbsp;日记站：diary.honk.wang<br>
           &nbsp;&nbsp;&nbsp;&nbsp;仓库站：storage.honk.wang<br>
           <br>
-          4.DNS解析变更<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4.1 统一采用Vercel部署<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4.2 由于不再采用github pages的个人主页而换用仓库主页<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;4.3 关闭国外跳转github.io的解析路径；网站备份保持Coding、Gitee部署,Render部署暂时无法登陆，遂放弃<br>
+          3.DNS解析变更<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3.1 由于顶级域名邮箱MX解析与CNAME解析存在冲突，删除顶级域名的CNAME解析<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3.2 统一采用Vercel部署<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3.3 由于不再采用github pages的个人主页而换用仓库主页<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3.4 关闭国外跳转github.io的解析路径；网站备份保持Coding、Gitee部署,Render部署暂时无法登陆，遂放弃<br>
           <br>
-          5.跟随Github地址及域名变化修改大量相关代码（包括博客站，日记站以及仓库站），博客仓库，CDN仓库整体迁移<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5.1 博客站：<br>
+          4.跟随Github地址及域名变化修改大量相关代码（包括博客站，日记站以及仓库站），博客Github，日记Github，CDN的Github仓库整体迁移及合并<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4.1 博客站：<br>
           &nbsp;&nbsp;&nbsp;&nbsp;跟随升级butterfly v3.2.0，由于新版集成Artitalk，修改相关代码<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;Leancloud跟随迁移评论，域名修改，流控问题唤醒变更为cron-job,参考<a href="https://blog.hclonely.com/posts/ac04080d/">使用 cron-job 解决 LeanCloud 因流控原因自动唤醒失败的问题</a><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;Leancloud迁移评论，域名修改，流控唤醒变更为cron-job,参考<a href="https://blog.hclonely.com/posts/ac04080d/">使用 cron-job 解决 LeanCloud 因流控原因自动唤醒失败的问题</a><br>
           
-          &nbsp;&nbsp;&nbsp;&nbsp;5.2 日记站：适应性修改配置，修改文章分类，图片cdn迁移，主题由0.9.5跟随升级至1.2.0<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;5.3 仓库站：适应性修改配置<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4.2 日记站：<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;适应性修改配置，修改文章分类，图片cdn迁移，主题由0.9.5跟随升级至1.2.0<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;4.3 仓库站：<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;适应性修改配置<br>
           </p>
 
           <div class="flex justify-between items-center">
